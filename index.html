@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bible Bowl Practice</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Bible Bowl Practice</h1>
+
+  <!-- Segment Picker -->
+  <section id="segmentScreen">
+    <p>Select a segment to practice:</p>
+
+    <div class="buttons">
+      <select id="segmentSelect"></select>
+      <button id="startBtn" disabled>Start</button>
+    </div>
+
+    <div id="status"></div>
+  </section>
+
+  <!-- Practice Screen -->
+  <section id="practiceScreen" style="display:none;">
+    <div class="buttons" style="justify-content: space-between;">
+      <div id="segmentLabel"></div>
+      <button id="changeSegmentBtn">Change Segment</button>
+    </div>
+
+    <div id="reference"></div>
+    <div id="verse"></div>
+
+    <div class="buttons">
+      <button id="revealBtn" disabled>Reveal Answers</button>
+      <button id="nextBtn" disabled>Next</button>
+    </div>
+
+    <div id="progress"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
